@@ -11,10 +11,9 @@ function ekb_dev_videos_views_default_views() {
   $view->name = 'devvidbyviddate';
   $view->description = 'New Features - Development Videos - by Weekly Video Page';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -306,9 +305,9 @@ function ekb_dev_videos_views_default_views() {
   $handler->override_option('access', array(
     'type' => 'role',
     'role' => array(
-      '3' => 3,
-      '5' => 5,
-      '8' => 8,
+      3 => 3,
+      5 => 5,
+      8 => 8,
     ),
   ));
   $handler->override_option('cache', array(
@@ -389,6 +388,7 @@ function ekb_dev_videos_views_default_views() {
     'title' => '',
     'description' => '',
     'weight' => 0,
+    'name' => 'navigation',
   ));
 
   $views[$view->name] = $view;
@@ -398,10 +398,9 @@ function ekb_dev_videos_views_default_views() {
   $view->name = 'devvidfeature';
   $view->description = 'New Features - Development Videos - Features  Page';
   $view->tag = '';
-  $view->view_php = '';
   $view->base_table = 'node';
-  $view->is_cacheable = FALSE;
-  $view->api_version = 2;
+  $view->core = 0;
+  $view->api_version = '2';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
   $handler = $view->new_display('default', 'Defaults', 'default');
   $handler->override_option('fields', array(
@@ -660,9 +659,9 @@ function ekb_dev_videos_views_default_views() {
   $handler->override_option('access', array(
     'type' => 'role',
     'role' => array(
-      '3' => 3,
-      '5' => 5,
-      '8' => 8,
+      3 => 3,
+      5 => 5,
+      8 => 8,
     ),
   ));
   $handler->override_option('cache', array(
@@ -743,6 +742,7 @@ function ekb_dev_videos_views_default_views() {
     'title' => '',
     'description' => '',
     'weight' => 0,
+    'name' => 'navigation',
   ));
 
   $views[$view->name] = $view;
